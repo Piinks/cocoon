@@ -35,6 +35,8 @@ Future<void> main() async {
           PushBuildStatusToGithub(config, authProvider),
       '/api/push-engine-build-status-to-github':
           PushEngineStatusToGithub(config, authProvider),
+      '/api/push-gold-status-to-github':
+          PushGoldStatusToGithub(config, authProvider),
       '/api/refresh-chromebot-status':
           RefreshChromebotStatus(config, authProvider),
       '/api/refresh-github-commits': RefreshGithubCommits(config, authProvider),
